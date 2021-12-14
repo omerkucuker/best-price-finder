@@ -3,7 +3,7 @@
 
 In this project, a request is sent to the given link every 30 minutes. 
 And the most suitable price is found on the basis of the number on the page and the result is returned with the get request. 
-In addition, if the price drops to the desired price, an e-mail is sent.
+In addition, if the price drops to the desired price, an e-mail is sent. It works on only wet wipes link on Trendyol.
 
 Html parse step was done with [Cheerio](https://www.npmjs.com/package/cheerio), sending mail was done with [Nodemailer](https://www.npmjs.com/package/nodemailer)
 
