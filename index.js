@@ -114,10 +114,10 @@ async function mainOperation(url, searchWord){
 }
 
 var intervalId = setInterval(async function() {
-  await mainOperation(url2 , searchWord2);
+  await mainOperation(url1 , searchWord1);
   mailOptions.text = 'Yaprak adet fiyatı: ' + optimalPrice + ' Ürün linki: ' + 'https://www.trendyol.com' + optimalLink;
   if(optimalPrice < 0.08){ sendMailToUser() }
-}, 10000);
+}, 1800000);
 
 server.get("/", (req, res) => { 
   res.send('Bulunan en uygun yaprak adet fiyatı: ' + `${findBestPrice}` + ' Ürün linki: ' + 'https://www.trendyol.com' + `${findBestLink}`);
